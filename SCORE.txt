@@ -3,3 +3,4 @@ Recitation                  Score           Comments
 Recitation3 (out of 2):     2
 Recitation4 (out of 5):     0
 Recitation5 (out of 4):     4
+Recitation6 (out of 5):     1.5               q2 minor mistake in code. All other questions wrong
