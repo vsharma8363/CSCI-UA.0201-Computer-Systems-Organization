@@ -18,4 +18,4 @@
 
 4. What is the reason for this fault in q3.c?
 
-> The segmentation fault is being caused at this line because the value passed into the y variable is the pointer (the memory address of ptr). 
+> The segmentation fault is being caused at this line because the value passed into the y variable is the pointer (the memory address of ptr) accessing an invalid memory address. This error was found using the gdb program.
