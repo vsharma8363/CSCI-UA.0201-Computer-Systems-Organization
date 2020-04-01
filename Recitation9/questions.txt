@@ -4,7 +4,8 @@ b) 01110001, 00101011
 
 Note: the numbers are written in binary representation, and addb is an operation on two 8-bit integers.
 
-
+a) Carry Flag - Set, Zero Flag - Clear, Sign Flag - Clear, Overflow Flag - Set
+b) Carry Flag - Clear, Zero Flag - Clear, Sign Flag - Clear, Overflow Flag - Clear
 
 2. 
 A function with prototype: void foo(long x, long* y);
@@ -21,6 +22,17 @@ foo:
 
 Write C code for foo that will have an effect equivalent to the assembly code shown. Be extra cautious about paranthesis in movq and cmpq.
 
+void foo(long x, long* y){
+	if(*y > 234)
+	{
+		return;
+	}
+	if(x > 578)
+	{
+		return;
+	}
+	x = 701;
+}
 
 
 3. What are the "maximum" number of stack frames of fibonacci() that will simultaneously exist at some point during the execution of fibonacci(6).
@@ -33,5 +45,9 @@ long fibonacci(long n) {
         return fibonacci(n-1) + fibonacci(n-2);
 }
 
+Maximum number of stack frames --> 15
+
 4. What are the "total" number of stack frames of fibonacci() that will eventually be created during the execution of fibonacci(6).
 Use same code as q3
+
+Total number of stack frames --> 1
