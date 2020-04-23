@@ -1,0 +1,20 @@
+1. The code files in "code1" folder are not getting linked when using gcc. Why is it so?
+
+> The program is not getting linked because you are attempting to access a static integer from main.c when you should be accessing the external pointer (a_ptr) from inc.c.
+
+2. Modify only "inc.c" file such that the linking succeeds and you are able to change the value of "a" within main.c to 5. In other words the final executable should print: 5.
+
+> The changes have been made (./a.out will print 5) --> I modified the program such that the value of the data stored at the pointer is 5 using a_ptr.
+
+3. The command "gcc main.c foo.c" is used for linking the files in "code3" directory. The command fails and the executable is not created. Why is it so?
+
+> The command fails because the program main.c is unable to access the function increment(int x) from the foo.c file. In order to fix this issue, you can use the macro definition command using the "TAG" executable constructs defined in foo.c (example is in question #4).
+
+4. What command should you run for a successful linking? You are not allowed to modify the files.
+
+> In order to successfully link the programs, you must run the following command: "gcc -D TAG foo.c main.c". The executable has been created as 'a.out'.
+
+5. We know that all non-static variables local to a function are stored in the stack. 
+   Why are static variables defined within a function not kept in stack?
+
+> Static variables are defined once and remain the same value throughout all function calls, therefore, these static variables must not be stored in the stack, but in the storage area on the machine.
