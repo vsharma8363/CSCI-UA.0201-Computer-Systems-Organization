@@ -20,3 +20,19 @@
    11111110110
 
    All addresses are in binary. For each address, specify whether it leads to a cache miss or a hit. Cache replacement policy = LRU
+
+----------------------------------------------------------Answer #1----------------------------------------------------------
+> miss
+> hit
+> miss
+> miss
+> hit
+> hit
+
+----------------------------------------------------------Answer #2----------------------------------------------------------
+> miss
+> miss
+> miss
+> hit
+> miss
+> miss
