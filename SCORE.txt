@@ -9,3 +9,7 @@ Recitation8 (out of 4):     2               q1,q2 wrong
 Recitation9 (out of 4):     0               
 Recitation11 (out of 5):     2               q3 is incorrect. I have given credit for q1 but it's not the complete answer. There is another convention that is broken
 Recitation12 (out of 5):    5               
+Recitation13 (out of 5):    4               q2 partially correct
+Recitation14 (out of 12):    12               
+
+Final score (out of 5):      4.0625               Evaluated by taking best 8 out of 11 submissions
